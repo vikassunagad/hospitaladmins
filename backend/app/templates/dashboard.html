@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard · Hospital Module</title>
+<link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+<div id="shell"></div>
+<div id="page" hidden>
+
+<div class="page-head"><h1>Dashboard</h1><span class="muted small" id="updated"></span><span class="sp"></span>
+  <span id="sampleBox" class="actions"><select id="sampleBed" style="width:auto"><option value="ICU">ICU bed</option><option value="EMERGENCY">Emergency bed</option><option value="GENERAL">General bed</option></select>
+  <button class="btn primary" id="sampleBtn" hidden>🎛️ Simulate Control Room request</button></span></div>
+<span id="emptyHint" hidden></span>
+<div class="grid cards">
+  <div class="card stat"><div class="v" id="c-total">0</div><div class="l">TOTAL BEDS</div></div>
+  <div class="card stat occupied"><div class="v" id="c-occupied">0</div><div class="l">OCCUPIED</div></div>
+  <div class="card stat reserved"><div class="v" id="c-reserved">0</div><div class="l">RESERVED</div></div>
+  <div class="card stat free"><div class="v" id="c-free">0</div><div class="l">FREE</div></div>
+  <div class="card stat icu"><div class="v" id="c-icu_free">0</div><div class="l">ICU AVAILABLE</div></div>
+  <div class="card stat icu"><div class="v" id="c-emergency_free">0</div><div class="l">EMERGENCY AVAILABLE</div></div>
+</div>
+<div class="grid two" style="margin-bottom:16px">
+  <div class="card"><h2>🚨 Emergencies</h2><div id="emTable"></div></div>
+  <div class="card"><h2>🚑 Incoming ambulance</h2><div id="ambPreview"></div></div>
+</div>
+<div class="grid two">
+  <div class="grid">
+    <div class="card"><h2>🧑‍⚕️ Patients</h2><div id="patTable"></div></div>
+    <div class="card"><h2>🕒 Recent activity</h2><ul class="list timeline" id="timeline"></ul></div>
+  </div>
+  <div class="card"><h2>🔔 Alerts</h2><ul class="list" id="alertList"></ul><a href="/alerts">All alerts →</a></div>
+</div>
+</div>
+<script src="/static/js/app.js"></script><script src="/static/js/dashboard.js"></script>
+</body>
+</html>

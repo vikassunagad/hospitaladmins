@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emergency details · Hospital Module</title>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+</head>
+<body>
+<div id="shell"></div>
+<div id="page" hidden>
+
+<div class="page-head"><a class="btn sm" href="/emergencies">← Back</a><h1 id="title">Emergency</h1></div>
+<div class="grid two">
+  <div class="grid">
+    <div class="card"><h2>Emergency details</h2><div id="details"></div></div>
+    <div class="card" id="trackerCard" hidden><h2>🗺️ Ambulance <span class="sp"></span><a class="btn sm" id="fullLink" href="/ambulance">Full screen view</a></h2><div id="tracker"></div></div>
+  </div>
+  <div class="grid">
+    <div class="card"><h2>Actions</h2><div class="actions" id="actions"></div></div>
+    <div class="card"><h2>Patient</h2><div id="patientBox"></div></div>
+    <div class="card"><h2>Timeline</h2><ul class="list timeline" id="timeline"></ul></div>
+  </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script><script src="/static/js/app.js"></script><script src="/static/js/map.js"></script><script src="/static/js/tracker.js"></script><script src="/static/js/emergency-details.js"></script>
+</body>
+</html>

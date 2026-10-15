@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile · Hospital Module</title>
+<link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+<div id="shell"></div>
+<div id="page" hidden>
+
+<div class="page-head"><h1>Profile</h1></div>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
+  <div class="card"><h2>Hospital</h2><div id="profileBox"></div></div>
+  <div class="card"><h2>Module settings</h2><div id="configBox"></div></div>
+  <div class="card"><h2>Communication rule</h2><p style="margin-top:0">This module talks <b>only</b> to the Control Room. It never contacts the Response Team or other modules directly. Ambulance routing and GPS belong to the Control Room; the hospital only <b>views</b> the data it receives.</p><p class="muted small">All data in this prototype is DEMO DATA, not real patient or hospital information.</p></div>
+</div>
+</div>
+<script src="/static/js/app.js"></script><script src="/static/js/profile.js"></script>
+</body>
+</html>

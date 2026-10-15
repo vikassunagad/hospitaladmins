@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hospital Login · Hospital Module</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="login-wrap">
+  <form class="login-card" id="loginForm" autocomplete="off">
+    <h1>🏥 Hospital Login</h1>
+    <p class="muted" style="margin-top:0">Central Emergency Control Room · Hospital Module</p>
+    <div style="margin:16px 0 12px"><label for="username">Hospital Username</label>
+      <input id="username" required autofocus placeholder="hospital1"></div>
+    <div style="margin-bottom:14px"><label for="password">Password</label>
+      <div class="pw"><input id="password" type="password" required placeholder="Password"><button type="button" id="showPw">SHOW</button></div></div>
+    <div id="loginErr" class="errorbox" hidden style="margin-bottom:12px"></div>
+    <button class="btn primary" id="loginBtn" style="width:100%;padding:10px">LOGIN</button>
+    <p class="muted small" style="margin-bottom:0">DEMO accounts only: hospital1 … hospital12, password 1234. Not real hospital credentials.</p>
+  </form>
+</div>
+<script src="/static/js/login.js"></script>
+</body>
+</html>
